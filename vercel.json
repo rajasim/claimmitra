@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "outputDirectory": ".vercel/output"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/dist/server/server.js" }
+  ]
 }
