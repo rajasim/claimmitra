@@ -3,11 +3,10 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  
   "scripts": {
   "dev": "vite dev",
-  "build": "NITRO_PRESET=vercel vite build",
-  "build:dev": "NITRO_PRESET=vercel vite build --mode development",
+  "build": "cross-env NITRO_PRESET=vercel vite build",
+  "build:dev": "cross-env NITRO_PRESET=vercel vite build --mode development",
   "preview": "vite preview",
   "lint": "eslint .",
   "format": "prettier --write ."
@@ -73,6 +72,7 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.4",
+    "cross-env": "^10.1.0",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.6",
